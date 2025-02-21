@@ -1,22 +1,22 @@
-## Web Scraper em PHP usando cURL
+# Web Scraper em PHP usando cURL
 
-Este tutorial ensinará como criar um web scraper em PHP utilizando cURL, definindo payload, headers e usando o método GET.
+![PHP Scraper](https://img.shields.io/badge/PHP-Scraper-blue.svg)
 
-Requisitos
+Este repositório contém um tutorial sobre como criar um web scraper em PHP utilizando `cURL`, definindo payload, headers e usando o método `GET`.
 
-PHP 7+ instalado
+## 🚀 Requisitos
 
-Extensão cURL ativada
+- PHP 7+ instalado
+- Extensão cURL ativada
+- Editor de código
 
-Editor de código
+## 📜 Passo a Passo
 
+### 1️⃣ Criando o Arquivo do Scraper
 
-Passo a Passo
+Crie um arquivo `scraper.php` e adicione o seguinte código:
 
-1. Criando o Arquivo do Scraper
-
-Crie um arquivo scraper.php e adicione o seguinte código:
-
+```php
 <?php
 
 function scrapeWebsite($url, $headers = [], $payload = []) {
@@ -67,33 +67,37 @@ if ($result) {
     echo $result;
 }
 ?>
+```
 
-2. Explicação do Código
+### 📌 Explicação do Código
 
-curl_init(): Inicializa a sessão cURL.
+- **`curl_init()`**: Inicializa a sessão cURL.
+- **Query string**: Se existir um payload, ele é convertido para query string e anexado à URL.
+- **`CURLOPT_RETURNTRANSFER`**: Faz com que a resposta seja retornada como string em vez de ser impressa diretamente.
+- **`CURLOPT_FOLLOWLOCATION`**: Segue redirecionamentos automáticos.
+- **Headers**: Podem ser personalizados, incluindo User-Agent.
+- **`curl_exec()`**: Executa a requisição HTTP.
+- **Erros**: Se ocorrerem, são exibidos.
 
-Query string: Se existir um payload, ele é convertido para query string e anexado à URL.
-
-CURLOPT_RETURNTRANSFER: Faz com que a resposta seja retornada como string em vez de ser impressa diretamente.
-
-CURLOPT_FOLLOWLOCATION: Segue redirecionamentos automáticos.
-
-Headers: Podem ser personalizados, incluindo User-Agent.
-
-curl_exec(): Executa a requisição HTTP.
-
-Erros: Se ocorrerem, são exibidos.
-
-
-3. Executando o Scraper
+### ▶️ Executando o Scraper
 
 Salve o arquivo e execute no terminal:
 
+```sh
 php scraper.php
+```
 
 Isso deve retornar os dados extraídos da URL informada.
 
-Conclusão
+## 🤖 Contribuindo
 
-Agora você tem um scraper funcional em PHP usando cURL, capaz de enviar headers, payload e realizar requisições GET. Use com responsabilidade e siga as políticas dos sites que você acessar!
+Sinta-se à vontade para abrir issues e pull requests com sugestões e melhorias.
+
+## ⚠️ Aviso
+
+Use este scraper com responsabilidade e siga as políticas dos sites que você acessar!
+
+---
+
+Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)
 
