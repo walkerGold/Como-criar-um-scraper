@@ -1,4 +1,4 @@
-Web Scraper em PHP usando cURL
+## Web Scraper em PHP usando cURL
 
 Este tutorial ensinará como criar um web scraper em PHP utilizando cURL, definindo payload, headers e usando o método GET.
 
