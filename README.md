@@ -99,5 +99,5 @@ Use este scraper com responsabilidade e siga as políticas dos sites que você a
 
 ---
 
-Feito com ❤️ por [Seu Nome](https://github.com/seu-usuario)
+Feito com ❤️ por [walker](https://github.com/walkerGold)
 
